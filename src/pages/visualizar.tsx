@@ -1,14 +1,13 @@
 import { CircularProgress } from "@material-ui/core";
-import React, { useContext, useEffect } from "react";
-import withAuth from "../components/withAuth";
+import React from "react";
 import { AuthContext } from "../contexts/authContext";
 import useAuth from "../lib/useAuth";
 
-function Home() {
+const visualizar = () => {
   useAuth();
   const { isLoading } = React.useContext(AuthContext);
 
-  return <div>{isLoading ? <CircularProgress /> : <h1>Hello</h1>}</div>;
-}
+  return <div>{isLoading ? <CircularProgress /> : <h2>Visuailizar</h2>}</div>;
+};
 
-export default Home;
+export default visualizar;

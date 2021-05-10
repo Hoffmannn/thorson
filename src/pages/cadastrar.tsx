@@ -33,6 +33,7 @@ const cadastrar = () => {
   const onSubmit = (formData, e) => {
     const produtoExists = produtos.find((p) => p.sku == formData.sku);
 
+    console.log(formData);
     if (produtoExists) {
       toast.error("Produto já cadastrado!");
     } else {
@@ -40,7 +41,6 @@ const cadastrar = () => {
       toast.success("Produto cadastrado com sucesso!");
       e.target.reset();
     }
-    console.log(produtos);
   };
 
   function handleCategoriaChange(e) {
@@ -82,18 +82,15 @@ const cadastrar = () => {
               id="categoria"
               value={categoria}
               onChange={handleCategoriaChange}
+              className={styles.formInput}
+              {...register("categoria")}
             >
-              <MenuItem value={"leite"}>Leite</MenuItem>
-              <MenuItem value={"doce"}>Doce</MenuItem>
-              <MenuItem value={"iogurte"}>Iogurte</MenuItem>
+              <MenuItem value={"Leite"}>Leite</MenuItem>
+              <MenuItem value={"Doce"}>Doce</MenuItem>
+              <MenuItem value={"Iogurte"}>Iogurte</MenuItem>
             </Select>
 
-            <Button
-              variant="contained"
-              color="primary"
-              type="submit"
-              className={styles.submitButton}
-            >
+            <Button variant="contained" color="primary" type="submit">
               Cadastrar
             </Button>
           </form>

@@ -17,7 +17,7 @@ function LoginCard() {
       localStorage.setItem("token", "abc");
       router.push("/cadastrar");
     } else {
-      toast.error("Usuário inválido");
+      toast.error("Usuário ou senha inválido");
     }
   };
   return (

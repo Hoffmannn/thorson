@@ -5,9 +5,9 @@ import { AuthContext } from "../contexts/authContext";
 import styles from "./login.module.scss";
 
 export default function Login() {
-  const { setIsLoading } = React.useContext(AuthContext);
+  const { setIsLoading, isLoading } = React.useContext(AuthContext);
   useEffect(() => {
-    setIsLoading(false);
+    setIsLoading(true);
   }, []);
   return (
     <div className={styles.container}>

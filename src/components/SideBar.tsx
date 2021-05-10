@@ -15,7 +15,7 @@ import {
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import useAuth from "../lib/useAuth";
 import { AuthContext } from "../contexts/authContext";

@@ -1,6 +1,5 @@
 import { CircularProgress } from "@material-ui/core";
 import React, { useContext, useEffect } from "react";
-import withAuth from "../components/withAuth";
 import { AuthContext } from "../contexts/authContext";
 import useAuth from "../lib/useAuth";
 

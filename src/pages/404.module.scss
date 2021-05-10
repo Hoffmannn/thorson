@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    color: rgb(99, 58, 211);
+    &:hover {
+      filter: opacity(0.8);
+      cursor: pointer;
+    }
+  }
+}

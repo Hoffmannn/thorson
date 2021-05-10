@@ -12,10 +12,12 @@
     "@material-ui/icons": "^4.11.2",
     "next": "10.2.0",
     "react": "17.0.2",
+    "react-data-table-component": "^6.11.7",
     "react-dom": "17.0.2",
     "react-hook-form": "^7.4.2",
     "react-toastify": "^7.0.4",
-    "sass": "^1.32.12"
+    "sass": "^1.32.12",
+    "styled-components": "^5.3.0"
   },
   "devDependencies": {
     "@types/node": "^14.14.41",
